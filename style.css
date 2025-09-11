@@ -115,7 +115,83 @@ nav a {
     color: orangered;
 }
 
+.container {
+    height: 400px;
+    display: flex;
+    gap: 40px;
+}
 
+.container img {
+    width: 300px;
+}
+
+.feature span {
+    color: red;
+    font-weight: bold;
+}
+
+.feature .accordion-button:hover {
+    color: orangered;
+}
+
+.links {
+    width: 500px;
+}
+
+.details {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 2px 2px 5px grey;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.info p {
+    color: grey;
+    font-size: 13px;
+}
+
+.space {
+    display: flex;
+    gap: 10px;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.space img {
+    width: 50px;
+    height: 50px;
+}
+
+.featured-icon img {
+    background-color: orangered;
+    padding: 20px;
+    border-radius: 50%;
+    position: relative;
+    left: 65px;
+    bottom: 65px;
+}
+
+.video img {
+    width: 100%;
+    height: 400px;
+}
+
+.video-text {
+    text-align: center;
+    position: relative;
+    bottom: 330px;
+}
+
+.video-text p {
+    color: orangered;
+}
+
+.video-text h2 {
+    color: white;
+    font-weight: bold;
+}
 
 /* ----------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 /* Media query for mobile large */
@@ -124,7 +200,7 @@ nav a {
     .heading {
         height: 25px;
         padding: 0px;
-        align-content: baseline;
+        align-items: baseline;
     }
 
     .about ul {
@@ -181,17 +257,159 @@ nav a {
 
     .content {
         position: absolute;
-        bottom: 10%;
+        bottom: 60%;
         left: 15%;
     }
+
     .content p {
         padding: 2px;
         font-size: 10px;
     }
+
     .content h5 {
         font-size: 20px;
         font-weight: bold;
     }
 
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
 
+    .container img {
+        width: 350px;
+    }
+
+    .links {
+        width: 350px;
+    }
+
+    .space img {
+        width: 50px;
+        height: 50px;
+    }
+    .featured-icon img {
+        position: absolute;
+    }
+
+    .video img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .video-text {
+        text-align: center;
+        position: relative;
+        bottom: 330px;
+    }
+
+
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Media query for tablet*/
+@media (min-width:768px) and (max-width:1023px) {
+    .heading {
+        height: 25px;
+        padding: 0px;
+        align-items: baseline;
+    }
+
+    .about ul {
+        gap: 5px;
+    }
+
+    .about li {
+        font-size: 7px;
+    }
+
+    .icons {
+        padding-right: 40px;
+    }
+
+    .icons ul {
+        gap: 5px;
+    }
+
+    .icons i {
+        font-size: 10px;
+        padding-right: 13px;
+    }
+
+    .small {
+        display: block;
+    }
+
+    .small .navbar {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 40px;
+
+    }
+
+    .small .navbar-brand {
+        font-size: 14px;
+        padding: 0px;
+
+    }
+
+    .small .navbar-toggler {
+        padding: 1px 6px;
+        font-size: 10px;
+
+    }
+
+    .villa {
+        display: none;
+    }
+
+    .content {
+        position: absolute;
+        bottom: 50%;
+        left: 15%;
+    }
+
+    .content p {
+        padding: 2px;
+        font-size: 10px;
+    }
+
+    .content h5 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    .container img {
+        width: 400px;
+    }
+
+    .links {
+        width: 400px;
+    }
+
+    .details {
+        width: 400px;
+    }
+
+    .space img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .featured-icon img {
+        position: relative;
+        left: 145px;
+        top: 85px;
+    }
 }

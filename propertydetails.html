@@ -12,38 +12,73 @@
 </head>
 
 <body>
-    <header>
-        <div class="heading">
-            <div class="about">
-                <ul>
-                    <li><i class="fa-solid fa-envelope"></i> info@company.com</li>
-                    <li><i class="fa-solid fa-map"></i> Sunny Isles Beach,FL 33160</li>
-                </ul>
+     <header>
+    <div class="heading">
+      <div class="about">
+        <ul>
+          <li><i class="fa-solid fa-envelope"></i> info@company.com</li>
+          <li><i class="fa-solid fa-map"></i> Sunny Isles Beach,FL 33160</li>
+        </ul>
+      </div>
+      <!-- social media icons -->
+      <div class="icons">
+        <ul>
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-linkedin"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="villa">
+      <h1>VILLA</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./properties.html">Properties</a></li>
+          <li><a href="./propertydetails.html">Property Details</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li class="schedule"><i class="fa-solid fa-calendar"></i> Schedule a visit </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- /NAV BAR FOR SMALL SCREENS -->
+    <div class="small">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">VILLA</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">VILLA</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <!-- social media icons -->
-            <div class="icons">
-                <ul>
-                    <li><i class="fa-brands fa-facebook"></i></li>
-                    <li><i class="fa-brands fa-twitter"></i></li>
-                    <li><i class="fa-brands fa-linkedin"></i></li>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="villa">
-            <h1>VILLA</h1>
-        <nav>
-            <ul>
-                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./properties.html">Properties</a></li>
-                <li><a href="./propertydetails.html">Property Details</a></li>
-                <li><a href="./contact.html">Contact Us</a></li>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./properties.html">PROPERTY</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./propertydetails.html">PROPERTY DETAILS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">CONTACT US</a>
+                </li>
                 <li class="schedule"><i class="fa-solid fa-calendar"></i> Schedule a visit </li>
-            </ul>
-        </nav>
+            </div>
+          </div>
         </div>
-    </header>
+      </nav>
+    </div>
+  </header>
 
 </body>
 

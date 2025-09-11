@@ -1,10 +1,197 @@
-header{
-    display:flex;
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+/* CSS for Home page */
+/* ---------------------------------------------------------------------------------------------------------------------------- */
+.heading {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    border-bottom: 2px solid whitesmoke;
+    padding: 20px 60px;
 }
-nav ul{
- display:flex;
- gap:20px;
+
+.about ul {
+    display: flex;
+    gap: 20px;
 }
-nav li{
+
+.about li {
+    list-style: none;
+}
+
+.about i {
+    color: orangered;
+}
+
+.icons ul {
+    display: flex;
+    gap: 10px;
+}
+
+.icons li {
+    list-style: none;
+}
+
+.icons i {
+    font-size: 18px;
+    border-radius: 50%;
+    padding: 4px;
+    padding-right: 20px;
+    background-color: lightgray;
+    color: white;
+}
+
+.small {
+    display: none;
+}
+
+.villa {
+    height: 60px;
+    padding: 0px 60px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    justify-content: space-evenly;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li i {
+    color: white;
+    background-color: orangered;
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.schedule {
+    align-items: center;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    padding: 2px;
+}
+
+nav a {
     text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content {
+    color: white;
+    position: absolute;
+    bottom: 20%;
+    left: 15%;
+}
+
+.content p {
+    display: inline-block;
+    padding: 5px;
+    background-color: white;
+    font-size: 15px;
+}
+
+.content h5 {
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.toronto {
+    color: black;
+}
+
+.canada {
+    color: orangered;
+}
+
+
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Media query for mobile large */
+
+@media (min-width:425px) and (max-width:767px) {
+    .heading {
+        height: 25px;
+        padding: 0px;
+        align-content: baseline;
+    }
+
+    .about ul {
+        gap: 5px;
+    }
+
+    .about li {
+        font-size: 7px;
+    }
+
+    .icons {
+        padding-right: 40px;
+    }
+
+    .icons ul {
+        gap: 5px;
+    }
+
+    .icons i {
+        font-size: 10px;
+        padding-right: 13px;
+    }
+
+    .small {
+        display: block;
+    }
+
+    .small .navbar {
+        padding-top: 0px;
+        /* reduce top padding */
+        padding-bottom: 0px;
+        /* reduce bottom padding */
+        height: 40px;
+        /* force smaller height */
+    }
+
+    .small .navbar-brand {
+        font-size: 14px;
+        /* smaller brand text */
+        padding: 0;
+        /* remove extra spacing */
+    }
+
+    .small .navbar-toggler {
+        padding: 1px 6px;
+        /* shrink toggle button */
+        font-size: 10px;
+        /* shrink icon */
+    }
+
+    .villa {
+        display: none;
+    }
+
+    .content {
+        position: absolute;
+        bottom: 10%;
+        left: 15%;
+    }
+    .content p {
+        padding: 2px;
+        font-size: 10px;
+    }
+    .content h5 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
 }

@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>VILLA PROJECT</title>
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -235,6 +235,7 @@
   <br>
   <br>
   <br>
+  <br><br><br><br>
 
   <!-- ACHIEVEMENT -->
   <div class="achieve">
@@ -321,7 +322,7 @@
       <div class="card">
         <!-- CARD 1 -->
         <img src="./assets/images/property-01.jpg" alt="" class="card-img-top">
-        <div class="card-body">
+        <div class="card-body" id="card-body">
           <div class="cost">
             <span>Luxury Villa </span>
             <p>$2.264.000</p>
@@ -372,9 +373,9 @@
         </div>
         <span class="visit">Schedule a Visit </span>
       </div>
+      <!-- CARD 3 -->
 
       <div class="card">
-        <!-- CARD 3 -->
         <img src="./assets/images/property-03.jpg" alt="" class="card-img-top">
         <div class="card-body">
           <div class="cost">
@@ -402,10 +403,11 @@
       </div>
     </div>
     <br>
-    <!-- /CARDS GROUP 2 -->
+    <!-- CARDS GROUP 2 -->
     <div class="cards">
+      <!-- CARD 1 -->
       <div class="card">
-        <!-- CARD 1 -->
+
         <img src="./assets/images/property-04.jpg" alt="" class="card-img-top">
         <div class="card-body">
           <div class="cost">
@@ -488,6 +490,65 @@
       </div>
     </div>
   </div>
+  <br><br><br>
+  <!-- contact us -->
+
+  <div class="agents">
+    <img src="./assets/images/contact-bg.jpg" alt="">
+    <div class="get-in">
+      <span>|CONTACT US</span>
+      <h3>Get In Touch With <br>Our Agents</h3>
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25974.763880573853!2d-80.1445142023739!3d25.93913008593791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9acfee073549d%3A0xf4e74db7a5da487a!2sSunny%20Isles%20Beach%2C%20FL%2033160%2C%20USA!5e1!3m2!1sen!2sin!4v1757850615931!5m2!1sen!2sin"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <form action="">
+      <label for="name">Full Name</label>
+      <br>
+      <input type="text" id="name" name="name" placeholder="Your Name...">
+      <br>
+      <label for="email">Email Address</label>
+      <br>
+      <input type="email" id="email" name="email" placeholder="Your Email...">
+      <br>
+      <label for="sub">Subject</label>
+      <br>
+      <input type="text" id="sub" name="sub" placeholder="Subject...">
+      <br>
+      <label for="msg">Message</label>
+      <br>
+      <textarea name="" id="Address" rows="6" cols="44" placeholder="Your Message"></textarea>
+      <br>
+      <br>
+      <button id="send">Send Message</button>
+      <br>
+    </form>
+    <!-- CONNECT CONTAINS NUMBER AND EMAIL -->
+    <div class="connect">
+      <div class="phone">
+        <i class="fa-solid fa-phone-volume"></i>
+        <div class="number">
+          <h5><b>010-020-0340</b></h5>
+          <p>Phone Number</p>
+        </div>
+      </div>
+      <div class="mail">
+        <i class="fa-regular fa-envelope"></i>
+        <div class="business">
+          <h5><b>info@villa.com</b></h5>
+          <p>Business Email</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- connect div ends here -->
+
+
+  <footer>
+    <p>Copyright @ 2048 Villa Agency Co., Ltd. All rights reserved. Design: XYZ</p>
+  </footer>
+
 
 
 

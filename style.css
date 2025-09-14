@@ -21,6 +21,7 @@
 
 .about i {
     color: orangered;
+    font-size: 18px;
 }
 
 .icons ul {
@@ -87,6 +88,10 @@ nav a {
     font-size: 20px;
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.offcanvas-body .navbar-nav {
+    gap: 15px;
 }
 
 .content {
@@ -195,17 +200,13 @@ nav a {
     font-weight: bold;
 }
 
-.offcanvas-body .navbar-nav {
-    gap: 15px;
-}
-
 #video-frame {
     align-items: center;
     width: 800px;
-    height: 300px;
+    height: 400px;
     border-radius: 5px;
     position: absolute;
-    top: 180px;
+    top: 140px;
     left: 25%;
 }
 
@@ -219,9 +220,11 @@ nav a {
     bottom: 140px;
     left: 760px;
     font-size: 18px;
+    padding-top: 15px;
+    padding-bottom: 12px;
     padding-right: 30px;
     padding-left: 15px;
-    box-shadow: 0 0 30px orangered;
+    box-shadow: 0 0 30px 10px orangered;
 }
 
 .achieve {
@@ -318,8 +321,9 @@ nav a {
     justify-content: space-between;
     padding: 10px 20px;
 }
-.home p{
-    color:grey;
+
+.home p {
+    color: grey;
 }
 
 .extra-info {
@@ -336,58 +340,202 @@ nav a {
     padding-bottom: 20px;
     font-weight: bold;
 }
-.properties{
+
+.properties {
     text-align: center;
 }
-.properties span{
-    color:red;
+
+.properties span {
+    color: red;
 }
-.properties h3{
+
+.properties h3 {
     font-size: 30px;
     font-weight: bold;
 }
-.card-container{
+
+.card-container {
     padding: 0px 60px;
 }
-.cards{
+
+.cards {
     display: flex;
     gap: 30px;
 }
-.card{
-width: 500px;
-height: 600px;
-padding: 15px;
-background-color: whitesmoke;
+
+.cards .card {
+    background-color: whitesmoke !important;
 }
-.cost{
+
+.card {
+    width: 500px;
+    height: 570px !important;
+    padding: 20px;
+}
+
+.card-body {
+    border-bottom: 2px solid rgb(246, 237, 237);
+    padding-bottom: 0px;
+}
+
+.cost {
     display: flex;
     justify-content: space-between;
 }
-.rooms{
-   margin:0px 0px;
+
+.cost span {
+    background-color: #fbd9cf;
+    margin-bottom: 10px;
+    padding: 5px 5px;
+    border-radius: 5px;
 }
-.rooms ul{
+
+.cost p {
+    font-weight: bold;
+    color: orangered
+}
+
+.rooms ul {
     display: flex;
-    gap:20px;
+    gap: 20px;
     list-style: none;
+    margin-bottom: 0px;
+    padding-left: 0px;
 }
-.area{
-    margin:0px 0px;
-}
-.area ul{
-     display: flex;
-    gap:20px;
+
+.area ul {
+    display: flex;
+    gap: 20px;
     list-style: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
 }
-.visit{
+
+.visit {
+    display: block;
+    margin: 15px auto;
     text-align: center;
     background-color: black;
-    color:white;
-    width:140px;
-    padding:4px;
+    color: white;
+    width: 140px;
+    padding: 4px;
     border-radius: 25px;
-   align-items: center;
 }
+
+.agents {
+    position: relative;
+    padding-bottom: 700px; 
+}
+
+.agents iframe {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+.agents form {
+    height: 620px;
+    width: 455px;
+    position: absolute;
+    left: 60%;
+    top: 50%;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 5px grey;
+    font-size: 18px;
+}
+
+.agents form label {
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.agents form input {
+    width: 100%;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: none;
+    background-color: whitesmoke;
+}
+
+form textarea {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background-color: whitesmoke;
+}
+
+#send {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    padding: 5px 15px;
+}
+
+.get-in {
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    text-align: center;
+}
+
+.get-in span {
+    color: orangered
+}
+
+.get-in h3 {
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+}
+
+.connect {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 9%;
+    top: 600px;
+}
+.phone,
+.mail {
+    display: flex;
+    gap: 25px;
+    width: 300px;
+    height: 80px;
+    padding:15px 25px;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px grey;
+}
+.fa-solid,.fa-regular
+{
+    font-size: 40px;
+    color: orangered;
+}
+.phone p,
+.mail p {
+    font-size:15px;
+    color:grey;
+    margin:0px;
+}
+footer{
+    height:60px;
+    background-color: black;
+    color: white;
+    align-content: center;
+    text-align: center;
+}
+
+/* footer {
+  position: relative;  
+  clear: both;         
+  text-align: center;
+  padding: 15px;
+  background: black;
+  color: white;
+} */
+
 
 
 
@@ -406,7 +554,9 @@ background-color: whitesmoke;
     .about ul {
         gap: 5px;
     }
-
+    .about i{
+        font-size: 10px;
+    }
     .about li {
         font-size: 7px;
     }
@@ -528,10 +678,10 @@ background-color: whitesmoke;
     #video-frame {
         margin: 0px;
         width: 300px;
-        height: 100px;
+        height: 150px;
         position: absolute;
         left: 15%;
-        top: 100px;
+        top: 77px;
     }
 
     #play-icon {
@@ -584,14 +734,108 @@ background-color: whitesmoke;
     .flat {
         width: 300px;
     }
+    .flat img{
+        width: 400px;
+    }
 
     .extra-info {
         width: 300px;
     }
 
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
 
+    .card {
+        width: 360px;
+        height: 510px !important;
+        padding: 20px;
+    }
+    .agents{
+        margin-bottom: 300px;
+    }
+    .agents iframe {
+        position: absolute;
+        top: 9%;
+        left: 20%;
+        width: 300px;
+        height: 300px;
+    }
 
+    .agents img {
+        width: 100%;
+    }
 
+    .agents form {
+        height: 530px;
+        width: 300px;
+        position: absolute;
+        left: 20%;
+        top: 432px;
+    }
+
+    .agents form label {
+        width: 100%;
+    }
+
+    .agents form input {
+        width: 100%;
+    }
+
+    .agents textarea {
+        width: 268px;
+        height: 100px;
+    }
+
+    .get-in {
+        position: absolute;
+        top: 2%;
+        left: 40%;
+    }
+
+    .get-in h3 {
+        font-size: 15px;
+    }
+
+    .get-in span {
+        color: orangered;
+        font-size: 10px;
+    }
+    .connect {
+        width:225px;
+    display: flex;
+     flex-direction: column;
+    gap: 20px;
+    position: relative;
+    left: 30%;
+    top: 860px;
+}
+.phone,
+.mail {
+    display: flex;
+    gap: 25px;
+    width: 220px;
+    height: 80px;
+    padding:15px 25px;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px grey;
+}
+.fa-solid,.fa-regular
+{
+    font-size: 35px;
+    color: orangered;
+}
+.phone p,
+.mail p {
+    font-size:12px;
+    color:grey;
+    margin:0px;
+}
+.mail h5,.phone h5{
+    font-size:12px;
+}
 
 }
 
@@ -778,6 +1022,78 @@ background-color: whitesmoke;
         width: 500px;
     }
 
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 460px;
+        height: 550px !important;
+        padding: 20px;
+    }
+    .agents{
+        padding-bottom: 300px;
+    }
+    .agents iframe {
+        position: absolute;
+        top: 16%;
+        left: 6%;
+        width: 310px;
+        height: 310px;
+    }
+
+        .agents img {
+        height: 300px;
+        width: 100%;
+    }
+
+    .agents form {
+        height: 530px;
+        width: 300px;
+        position: absolute;
+        left: 54%;
+        top: 185px;
+    }
+
+    .agents form label {
+        width: 100%;
+    }
+
+    .agents form input {
+        width: 100%;
+    }
+
+    .agents textarea {
+        width: 268px;
+        height: 100px;
+    }
+
+    .get-in {
+        position: absolute;
+        top: 6%;
+        left: 37%;
+    }
+
+    .get-in h3 {
+        font-size: 25px;
+    }
+
+    .get-in span {
+        color: orangered;
+        font-size: 10px;
+    }
+    .connect {
+        width:400px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 9%;
+    top: 230px;
+    flex-direction: column;
+}
+
 }
 
 
@@ -841,10 +1157,12 @@ background-color: whitesmoke;
         flex-wrap: wrap;
         gap: 30px;
     }
-    .data img{
-        width:600px;
-        height:350px;
+
+    .data img {
+        width: 600px;
+        height: 350px;
     }
+
     .flat {
         width: 300px;
         height: 350px;
@@ -852,5 +1170,74 @@ background-color: whitesmoke;
         padding: 20px;
     }
 
+    .cards {
+        align-items: center;
+    }
+
+    .card {
+        width: 550px;
+        height: 450px !important;
+        padding: 10px;
+    }
+
+    .rooms ul,
+    .area ul {
+        font-size: 10px;
+    }
+    .agents{
+        padding-bottom: 330px;
+    }
+    .agents iframe {
+        position: absolute;
+        top: 19%;
+        left: 6%;
+        width: 370px;
+        height: 370px;
+    }
+
+    .agents img {
+        width: 100%;
+    }
+
+    .agents form {
+        height: 565px;
+        width: 390px;
+        position: absolute;
+        left: 54%;
+        top: 239px;
+    }
+
+    .agents form label {
+        width: 100%;
+    }
+
+    .agents form input {
+        width: 100%;
+    }
+
+    .agents textarea {
+        width: 358px;
+        height: 100px;
+    }
+
+    .get-in {
+        position: absolute;
+        top: 8%;
+        left: 37%;
+        text-align: center;
+    }
+
+    .get-in h3 {
+        font-size: 30px;
+    }
+    .connect {
+        width:400px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 9%;
+    top: 270px;
+    flex-direction: column;
+}
 
 }

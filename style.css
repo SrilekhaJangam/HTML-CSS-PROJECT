@@ -63,6 +63,10 @@ nav ul {
 nav li {
     list-style: none;
 }
+nav a:visited{
+    color:orangered
+
+}
 
 .schedule i {
     color: white;
@@ -143,10 +147,10 @@ nav a {
 .links {
     width: 500px;
 }
-.links .accordian-item{
+.links .accordian-item-all{
     background-color: whitesmoke !important;
 }
-/* .accordion-item {
+ .accordion-item {
     background-color: whitesmoke !important;
     border: none !important;
 }
@@ -154,7 +158,7 @@ nav a {
 .accordion-button {
     background-color: transparent !important;
     box-shadow: none !important;
-} */ 
+} 
 
 .container .details {
     width: 350px;
@@ -173,7 +177,7 @@ nav a {
 
 .space {
     display: flex;
-    gap: 10px;
+    gap: 25px;
     border-bottom: 2px solid whitesmoke;
 }
 
@@ -755,6 +759,18 @@ form textarea {
     margin-top:30px;
     width:68% ;
 }
+.know-more .accordian-item{
+    background-color: whitesmoke !important;
+}
+ .accordion-item {
+    background-color: whitesmoke !important;
+    border: none !important;
+}
+
+.accordion-button {
+    background-color: transparent !important;
+    box-shadow: none !important;
+} 
 
 
 
@@ -871,7 +887,7 @@ form textarea {
     .video img {
         width: 100%;
         height: auto;
-        margin-top: 1000px;
+        margin-top: 1025px;
     }
 
     .video-text {

@@ -1,18 +1,21 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VILLA PROJECT</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VILLA PROJECT</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
+  <header>
     <div class="heading">
       <div class="about">
         <ul>
@@ -43,7 +46,8 @@
         </ul>
       </nav>
     </div>
-    <!-- /NAV BAR FOR SMALL SCREENS -->
+    <!-- NAV BAR FOR SMALL SCREENS -->
+
     <div class="small">
       <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
@@ -79,6 +83,304 @@
       </nav>
     </div>
   </header>
+  <div class="place">
+    <img src="./assets/images/page-heading-bg.jpg" alt="">
+    <div class="house">
+      <span>HOME/PROPERTIES</span>
+      <h3>PROPERTIES</h3>
+    </div>
+  </div>
+  <div class="show">
+    <button style="background-color: orangered;">Show All</button>
+    <button>Apartment</button>
+    <button>Villa House</button>
+    <button>Penthouse</button>
+  </div>
+
+  <!-- --------CARDS-------- -->
+
+  <div class="card-container">
+    <div class="cards">
+      <div class="card">
+        <!-- CARD 1 -->
+        <img src="./assets/images/property-01.jpg" alt="" class="card-img-top">
+        <div class="card-body" id="card-body">
+          <div class="cost">
+            <span>Luxury Villa </span>
+            <p>$2.264.000</p>
+          </div>
+          <div class="card-title">
+            <h5>18 New Street Miami,OR 97219</h5>
+          </div>
+          <div class="rooms">
+            <ul>
+              <li>Bedrooms:<b>8</b></li>
+              <li>Bathrooms:<b>8</b></li>
+            </ul>
+          </div>
+          <div class="area">
+            <ul>
+              <li>Area:<b>542m2</b></li>
+              <li>Floor:<b>3</b></li>
+              <li>Parking:<b>6 spots</b></li>
+            </ul>
+          </div>
+        </div>
+        <span class="visit">Schedule a Visit </span>
+      </div>
+      <!-- CARD 2 -->
+      <div class="card">
+        <img src="./assets/images/property-02.jpg" alt="" class="card-img-top">
+        <div class="card-body">
+          <div class="cost">
+            <span>Luxury Villa </span>
+            <p>$1.180.000</p>
+          </div>
+          <div class="card-title">
+            <h5>54 Mid Street Florida,OR 27001</h5>
+          </div>
+          <div class="rooms">
+            <ul>
+              <li>Bedrooms:<b>6</b></li>
+              <li>Bathrooms:<b>5</b></li>
+            </ul>
+          </div>
+          <div class="area">
+            <ul>
+              <li>Area:<b>450m2</b></li>
+              <li>Floor:<b>3</b></li>
+              <li>Parking:<b>8 spots</b></li>
+            </ul>
+          </div>
+        </div>
+        <span class="visit">Schedule a Visit </span>
+      </div>
+      <!-- CARD 3 -->
+
+      <div class="card">
+        <img src="./assets/images/property-03.jpg" alt="" class="card-img-top">
+        <div class="card-body">
+          <div class="cost">
+            <span>Luxury Villa </span>
+            <p>$1.460.000</p>
+          </div>
+          <div class="card-title">
+            <h5>26 Old Street Miami,OR 38540</h5>
+          </div>
+          <div class="rooms">
+            <ul>
+              <li>Bedrooms:<b>5</b></li>
+              <li>Bathrooms:<b>4</b></li>
+            </ul>
+          </div>
+          <div class="area">
+            <ul>
+              <li>Area:<b>225m2</b></li>
+              <li>Floor:<b>3</b></li>
+              <li>Parking:<b>10 spots</b></li>
+            </ul>
+          </div>
+        </div>
+        <span class="visit">Schedule a Visit </span>
+      </div>
+    </div>
+    <br>
+    <!-- CARDS GROUP 2 -->
+    <div class="cards">
+      <!-- CARD 1 -->
+      <div class="card">
+
+        <img src="./assets/images/property-04.jpg" alt="" class="card-img-top">
+        <div class="card-body">
+          <div class="cost">
+            <span>Apartment </span>
+            <p>$584.000</p>
+          </div>
+          <div class="card-title">
+            <h5>12 New Street Miami,OR 12650</h5>
+          </div>
+          <div class="rooms">
+            <ul>
+              <li>Bedrooms:<b>4</b></li>
+              <li>Bathrooms:<b>3</b></li>
+              <li>Area: <b>125m2</b></li>
+            </ul>
+          </div>
+          <div class="area">
+            <ul>
+              <li>Floor:<b>25th</b></li>
+              <li>Parking:<b>2 cars</b></li>
+            </ul>
+          </div>
+        </div>
+        <span class="visit">Schedule a Visit </span>
+      </div>
+      <!-- CARD 2 -->
+      <div class="card">
+        <img src="./assets/images/property-05.jpg" alt="" class="card-img-top">
+        <div class="card-body">
+          <div class="cost">
+            <span>Penthouse</span>
+            <p>$925.600</p>
+          </div>
+          <div class="card-title">
+            <h5>34 Beach Street Miami,Or 42680</h5>
+          </div>
+          <div class="rooms">
+            <ul>
+              <li>Bedrooms:<b>4</b></li>
+              <li>Bathrooms:<b>4</b></li>
+              <li>Area: <b>180m2</b></li>
+            </ul>
+          </div>
+          <div class="area">
+            <ul>
+              <li>Floor:<b>38th</b></li>
+              <li>Parking:<b>2 cars</b></li>
+            </ul>
+          </div>
+        </div>
+        <span class="visit">Schedule a Visit </span>
+      </div>
+      <div class="card">
+        <!-- CARD 3 -->
+        <img src="./assets/images/property-06.jpg" alt="" class="card-img-top">
+        <div class="card-body">
+          <div class="cost">
+            <span>Moderen Condo</span>
+            <p>$450.000</p>
+          </div>
+          <div class="card-title">
+            <h5>22 Hope Street Portland,OR 16540</h5>
+          </div>
+          <div class="rooms">
+            <ul>
+              <li>Bedrooms:<b>3</b></li>
+              <li>Bathrooms:<b>2</b></li>
+              <li>Area: <b>165m2</b></li>
+            </ul>
+          </div>
+          <div class="area">
+            <ul>
+              <li>Floor:<b>26th</b></li>
+              <li>Parking:<b>3 cars</b></li>
+            </ul>
+          </div>
+        </div>
+        <span class="visit">Schedule a Visit </span>
+      </div>
+    </div>
+    <br>
+    <!-- CARDS GRP 3 -->
+    <div class="cards">
+      <div class="card">
+        <!-- CARD 1 -->
+        <img src="./assets/images/deal-01.jpg" alt="" class="card-img-top">
+        <div class="card-body" id="card-body">
+          <div class="cost">
+            <span>Luxury Villa </span>
+            <p>$980.000</p>
+          </div>
+          <div class="card-title">
+            <h5>14 Mid Street Miami, OR 36450</h5>
+          </div>
+          <div class="rooms">
+            <ul>
+              <li>Bedrooms:<b>8</b></li>
+              <li>Bathrooms:<b>8</b></li>
+            </ul>
+          </div>
+          <div class="area">
+            <ul>
+              <li>Area:<b>550m2</b></li>
+              <li>Floor:<b>3</b></li>
+              <li>Parking:<b>12 spots</b></li>
+            </ul>
+          </div>
+        </div>
+        <span class="visit">Schedule a Visit </span>
+      </div>
+      <!-- CARD 2 -->
+      <div class="card">
+        <img src="./assets/images/property-02.jpg" alt="" class="card-img-top">
+        <div class="card-body">
+          <div class="cost">
+            <span>Luxury Villa </span>
+            <p>$1.520.000</p>
+          </div>
+          <div class="card-title">
+            <h5>26 Old Street Miami, OR 12870</h5>
+          </div>
+          <div class="rooms">
+            <ul>
+              <li>Bedrooms:<b>12</b></li>
+              <li>Bathrooms:<b>15</b></li>
+            </ul>
+          </div>
+          <div class="area">
+            <ul>
+              <li>Area:<b>380m2</b></li>
+              <li>Floor:<b>3</b></li>
+              <li>Parking:<b>14 spots</b></li>
+            </ul>
+          </div>
+        </div>
+        <span class="visit">Schedule a Visit </span>
+      </div>
+      <!-- CARD 3 -->
+      <div class="card">
+        <img src="./assets/images/property-01.jpg" alt="" class="card-img-top">
+        <div class="card-body">
+          <div class="cost">
+            <span>Luxury Villa </span>
+            <p>$3.145.000</p>
+          </div>
+          <div class="card-title">
+            <h5>34 New Street Miami, OR 24650</h5>
+          </div>
+          <div class="rooms">
+            <ul>
+              <li>Bedrooms:<b>10</b></li>
+              <li>Bathrooms:<b>12</b></li>
+            </ul>
+          </div>
+          <div class="area">
+            <ul>
+              <li>Area:<b>860m2</b></li>
+              <li>Floor:<b>3</b></li>
+              <li>Parking:<b>10 spots</b></li>
+            </ul>
+          </div>
+        </div>
+        <span class="visit">Schedule a Visit </span>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="pagination">
+    <div class="page" style="background-color: orangered;">1</div>
+    <div class="page">2</div>
+    <div class="page">3</div>
+    <div class="page">>></div>
+  </div>
+
+
+  <footer>
+    <p>Copyright @ 2048 Villa Agency Co., Ltd. All rights reserved. Design: Srilekha</p>
+  </footer>
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

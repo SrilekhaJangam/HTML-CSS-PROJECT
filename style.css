@@ -63,7 +63,7 @@ nav ul {
 nav li {
     list-style: none;
 }
-nav a:visited{
+nav a:active{
     color:orangered
 
 }

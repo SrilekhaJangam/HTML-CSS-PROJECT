@@ -1095,12 +1095,12 @@ form textarea {
    padding: 0px 11px;
     font-size: 10px
 }
-.show {
+.list {
   display: flex;             
   justify-content: center;    
   gap: 10px;                 
 }
-.show button{
+.list button{
     font-size: 12px;
     width:80px;
 }
@@ -1589,7 +1589,7 @@ form textarea {
         left: 3px;
         bottom: 65px;
     }
-
+        
     .links {
         width: 400px;
     }
